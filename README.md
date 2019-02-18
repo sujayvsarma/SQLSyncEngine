@@ -1,5 +1,5 @@
 # SQLSyncEngine
-Allows automatic synchronization between two SQL Server databases. The databases may be 
+Allows automatic synchronization between two SQL Server databases. 
 
 # Pre-requisites for use
 The two databases may reside on the same SQL Server or on different SQL Server systems/instances. If they exist on different systems/instances, you should be able to create a LINKED SERVER between the two.
