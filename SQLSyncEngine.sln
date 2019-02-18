@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20623.1 VSUPREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQLSyncEngine", "SQLSyncEngine.sqlproj", "{AEC29A87-96FB-474E-90FA-20F7EE79B79B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLSyncEngineConfigurationManagement", "SQLSyncEngineConfigurationManagement\SQLSyncEngineConfigurationManagement.csproj", "{6122FE31-6AE5-4A1A-A2E6-FB03D0C46BC7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sujayvsarma.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SQLSyncEngine.sqlproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = SQLSyncEngineConfigurationManagement\\SQLSyncEngineConfigurationManagement.csproj
+		SccProjectName2 = SQLSyncEngineConfigurationManagement
+		SccLocalPath2 = SQLSyncEngineConfigurationManagement
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEC29A87-96FB-474E-90FA-20F7EE79B79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC29A87-96FB-474E-90FA-20F7EE79B79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC29A87-96FB-474E-90FA-20F7EE79B79B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AEC29A87-96FB-474E-90FA-20F7EE79B79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC29A87-96FB-474E-90FA-20F7EE79B79B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC29A87-96FB-474E-90FA-20F7EE79B79B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6122FE31-6AE5-4A1A-A2E6-FB03D0C46BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6122FE31-6AE5-4A1A-A2E6-FB03D0C46BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6122FE31-6AE5-4A1A-A2E6-FB03D0C46BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6122FE31-6AE5-4A1A-A2E6-FB03D0C46BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
