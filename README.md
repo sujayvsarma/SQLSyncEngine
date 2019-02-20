@@ -16,12 +16,11 @@ You must deploy the code onto the **destination** SQL Server.
 
 4. Edit the table **DataDestinations**, adding one row for every database you wish to pull down. There is no requirement that the names of databases (DatabaseName column) needs to match. You can pull DB1 into DB2.
 
-5. Similarly to #3 and #4 above, edit the tables **SourceTables** and **DestinationTables**, adding rows for every **table** on every database you wish to pull down. Remember to match up the right DataSourceId (in SourceTables) and DataDestinationId (in DestinationTables) otherwise you will end up with tables in the wrong databases!
+5. Similarly to #3 and #4 above, edit the table **SourceTables** , adding rows for every **table** on every database you wish to pull down. Remember to match up the right DataSourceId otherwise you will end up with tables in the wrong databases!
 
     Some pointers about the fields in these tables:
     SyncInsert/SyncUpdate/SyncDelete - set to 1, to enable updating new, modified and deleted rows accordingly.
     
-    In SourceTables:
     Insert/Update KeyColumn - Name of the column to consider the key for inserts and updates respectively. For example, an ID column may be the key for detecting a new row, but a LastModified column for a modified row.
     
     Insert/Update Column NULL function - This is currently NOT used, set it to a "" value (NOT NULL!)
@@ -34,9 +33,7 @@ You must deploy the code onto the **destination** SQL Server.
     
     When both ConflictHonorSource and ConflictHonorDestination are 1, Source will always win out (source overwrites destination).
 
-6. Edit the **TableSyncMap** table to configure which SourceTable ends up in which DestinationTable. Get this wrong, and this will seriously corrupt your data (at the very least!)
-
-7. **TEST** your configuration. Ensure you are logged in to the SQL Server with an account with **sysadmin** permissions. Run the **sp_RunForAllDataSources** stored procedure. This will perform a full sync. Watch the Output window for errors and resolve them. See the **Troubleshooting** tips below for help.
+6. **TEST** your configuration. Ensure you are logged in to the SQL Server with an account with **sysadmin** permissions. Run the **sp_RunForAllDataSources** stored procedure. This will perform a full sync. Watch the Output window for errors and resolve them. See the **Troubleshooting** tips below for help.
 
 ## Automating sync
 Create a SQL Server Agent job that runs the sp_RunForAllDataSources at the schedule you want. Don't forget to run this job as **sa**.
